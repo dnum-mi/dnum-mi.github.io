@@ -7,3 +7,20 @@ body,
 .h-full {
   height: 100%;
 }
+
+.container-for-two {
+  @apply grid grid-cols-2 gap-10 mb-4;
+}
+
+.container-for-two.two-third {
+  @apply grid-cols-[2fr,1fr];
+}
+
+.container-for-two > .fr-callout {
+  margin: 0;
+}
+
+.section-separator {
+  @apply my-12;
+  background-image: none;
+}

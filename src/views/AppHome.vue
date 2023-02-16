@@ -7,27 +7,51 @@ const knowMoreBtn = {
 const tabListName = 'benefitsTab'
 const tabTitles = [
   {
-    title: '1',
-    icon: 'ri-mail-line',
+    title: 'bénéfice 1',
+    icon: 'ri-coins-fill',
   },
   {
-    title: '2',
-    icon: 'ri-mail-line',
+    title: 'bénéfice 2',
+    icon: 'ri-shield-check-fill',
+  },
+  {
+    title: 'bénéfice 3',
+    icon: 'ri-git-merge-fill',
   },
 ]
 const tabContents = [
-  'blabla 1',
-  'blabla 2',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem',
+]
+
+const useCases = [
+  {
+    title: 'Cas 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: 'Cas 2',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: 'Cas 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: 'Cas 4',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
 ]
 </script>
 
 <template>
-  <div
-    class="fr-py-2w flex justify-around items-center w-full"
+  <section
+    class="fr-py-2w container-for-two"
   >
     <DsfrCallout
       title="Description de l'offre Cloud PI Native"
-      content="blabla"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       :button="knowMoreBtn"
     />
     <DsfrTabs
@@ -35,9 +59,11 @@ const tabContents = [
       :tab-titles="tabTitles"
       :tab-contents="tabContents"
     />
-  </div>
+  </section>
 
-  <div
+  <hr class="section-separator">
+
+  <section
     class="w-full flex flex-col justify-center align-center"
   >
     <h2
@@ -45,29 +71,38 @@ const tabContents = [
     >
       Cas d'usage
     </h2>
+    <DsfrTiles :tiles="useCases" />
+  </section>
 
+  <hr class="section-separator">
+
+  <section>
     <div
-      class="flex justify-around"
+      class="container-for-two"
     >
       <DsfrTile
         class="fr-mt-2w"
         title="persona 1"
-        description="blablabla"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        @click="$router.push('/contact')"
       />
       <DsfrTile
         class="fr-mt-2w"
         title="persona 2"
-        description="blablabla"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        @click="$router.push('/contact')"
       />
     </div>
-  </div>
+  </section>
 
-  <div
-    class="fr-mt-2w fr-pt-2w fr-background-contrast--grey w-full flex justify-around"
+  <hr class="section-separator">
+
+  <section
+    class="fr-mt-2w fr-pt-2w fr-background-contrast--grey container-for-two two-third"
   >
     <DsfrCallout
       title="Prix"
-      content="blabla"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     />
     <div
       class="fr-summary"
@@ -80,10 +115,10 @@ const tabContents = [
       <ul
         class="fr-summary__list"
       >
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li>consectetur adipiscing elit</li>
+        <li>consectetur adipiscing elit</li>
+        <li>consectetur adipiscing elit</li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
