@@ -32,6 +32,10 @@ const networks = [
     url: 'https://pi.minint.fr/',
   },
 ]
+
+const copy = (text) => {
+  navigator.clipboard.writeText(text)
+}
 </script>
 
 <template>
@@ -53,6 +57,15 @@ const networks = [
       :mail="mail"
       copy-label="Copier l'url de la page dans le presse-papier"
     />
+    <p>
+      Ecrivez-nous :
+      <a :href="mail.to"> {{ mail.address }} </a>
+      <span
+        class="fr-icon-clipboard-line icon"
+        title="copier dans le presse-papier"
+        @click="copy(mail.address)"
+      />
+    </p>
   </div>
   <DsfrFooter
     class="dso-landing-footer"

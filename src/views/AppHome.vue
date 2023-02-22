@@ -32,23 +32,33 @@ const useCases = [
   {
     title: 'Cas 1',
     description: 'La refonte du programme ERPC (éducation routière et permis de conduire)',
+    to: '#cas-usage',
   },
   {
     title: 'Cas 2',
     description: 'Le projet SELFIM (détection de fraudes lors de l\'émission des titres sécurisés)',
+    to: '#cas-usage',
   },
   {
     title: 'Cas 3',
     description: 'Le ministère de la Justice',
+    to: '#cas-usage',
   },
   {
     title: 'Cas 4',
     description: 'Démarches-Simplifiées et Mon France Connect',
+    to: '#cas-usage',
   },
 ]
 </script>
 
 <template>
+  <h1
+    id="top"
+    class="fr-h1 fr-text-title--blue-france text-center"
+  >
+    Cloud PI Native
+  </h1>
   <section
     class="fr-py-2w container-for-two"
   >
@@ -71,9 +81,12 @@ const useCases = [
     class="w-full flex flex-col justify-center align-center"
   >
     <h2
+      id="cas-usage"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
-      Cas d'usage
+      <a href="#cas-usage">
+        Cas d'usage
+      </a>
     </h2>
     <DsfrTiles :tiles="useCases" />
   </section>
@@ -81,6 +94,14 @@ const useCases = [
   <hr class="section-separator">
 
   <section>
+    <h2
+      id="personas"
+      class="fr-h2 fr-text-title--blue-france text-center"
+    >
+      <a href="#personas">
+        Personas
+      </a>
+    </h2>
     <div
       class="container-for-two"
     >
@@ -88,41 +109,51 @@ const useCases = [
         class="fr-mt-2w"
         title="Les acteurs Inter-ministériels"
         description="En tant qu'acteur public ministériel vous avez un rôle ou des objectifs de transformation numérique de l'action publique ? Rejoignez la communauté Cloud Pi Native proposée par le MIOM pour sécuriser vos applications et accélérer votre tranformation numérique."
-        @click="$router.push('/contact')"
+        to="#personas"
       />
       <DsfrTile
         class="fr-mt-2w"
         title="Les ESN"
         description="En tant qu'ESN vous jouez un rôle de conseil, d'appui et d'accompagnement des Ministère dans leur démarche de transformation numérique ? Apportez votre contribution en rejoignant la communauté Cloud Pi Native de l'Etat donnant accès à des formations, de la documentation et du support."
-        @click="$router.push('/contact')"
+        to="#personas"
       />
     </div>
   </section>
 
   <hr class="section-separator">
 
-  <section
-    class="fr-mt-2w fr-background-contrast--grey container-for-two two-third"
-  >
-    <DsfrCallout
-      title="Pricing"
-      content="Profitez dès maintenant de l'accès au service Cloud PI Native pour le moment gratuit et obtenez du support pour être accompagné à mieux qualifier votre besoin."
-    />
-    <div
-      class="fr-summary"
+  <section>
+    <h2
+      id="pricing"
+      class="fr-h2 fr-text-title--blue-france text-center"
     >
-      <h2
-        class="fr-summary__title"
+      <a href="#pricing">
+        Pricing
+      </a>
+    </h2>
+    <div
+      class="fr-mt-2w fr-background-contrast--grey container-for-two two-third"
+    >
+      <DsfrCallout
+        title="Pricing"
+        content="Profitez dès maintenant de l'accès au service Cloud PI Native pour le moment gratuit et obtenez du support pour être accompagné à mieux qualifier votre besoin."
+      />
+      <div
+        class="fr-summary"
       >
-        Critères d'éligibilité
-      </h2>
-      <ul
-        class="fr-summary__list"
-      >
-        <li>Oeuvrer dans la sphère publique</li>
-        <li>consectetur adipiscing elit</li>
-        <li>consectetur adipiscing elit</li>
-      </ul>
+        <h2
+          class="fr-summary__title"
+        >
+          Critères d'éligibilité
+        </h2>
+        <ul
+          class="fr-summary__list"
+        >
+          <li>Oeuvrer dans la sphère publique</li>
+          <li>consectetur adipiscing elit</li>
+          <li>consectetur adipiscing elit</li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
