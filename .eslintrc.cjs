@@ -1,7 +1,9 @@
 module.exports = {
   root: true,
+  ignorePatterns: ['dist/**', 'pnpm-lock.yaml'],
   extends: [
     'plugin:vue/vue3-recommended',
+    'plugin:yml/standard',
     'eslint:recommended',
     'standard',
   ],
