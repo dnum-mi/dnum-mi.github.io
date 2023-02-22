@@ -6,6 +6,6 @@ export {
   RiRefreshLine,
   RiMailLine,
   RiShieldCheckFill,
-  RiCoinsFill,
+  RiAwardFill,
   RiGitMergeFill,
 } from 'oh-vue-icons/icons/ri/index.js'

@@ -1,34 +1,37 @@
 <script setup>
+import { ref } from 'vue'
+import { mail, sendEmail } from '@/utils.js'
+
 const serviceTitle = 'DNUM'
 const serviceDescription = 'Cloud PI Native'
 const logoText = ['Ministère', 'de l\'intérieur', 'et des outre-mer']
 
-const quickLinks = [
-  {
-    label: 'Accueil',
-    path: '/',
-    icon: 'ri-home-4-line',
-    iconAttrs: { color: 'var(--red-marianne-425-625)' },
-  },
+const quickLinks = ref([
   {
     label: 'Nous contacter',
-    path: '/contact',
+    path: '/',
+    onClick: () => sendEmail(),
     icon: 'ri-mail-line',
   },
-]
+])
 
 const networks = [
   {
     name: 'linkedin',
-    href: 'https://www.linkedin.com/company/direction-du-num%C3%A9rique-du-minist%C3%A8re-de-l%E2%80%99int%C3%A9rieur/mycompany/',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/company/direction-du-num%C3%A9rique-du-minist%C3%A8re-de-l%E2%80%99int%C3%A9rieur/mycompany/',
+  },
+  {
+    name: 'github',
+    label: 'GitHub',
+    url: 'https://github.com/dnum-mi/dso-console#readme',
+  },
+  {
+    name: 'cloud-pi-native',
+    label: 'Cloud Pi Native',
+    url: 'https://pi.minint.fr/',
   },
 ]
-const newsletterData = {
-  // title: '',
-  // description: '',
-  // email: '',
-
-}
 </script>
 
 <template>
@@ -43,13 +46,16 @@ const newsletterData = {
     <router-view />
   </div>
 
-  <DsfrFollow
-    class="fr-mt-2w"
-    :networks="networks"
-    :newsletter-data="newsletterData"
-  />
-
+  <div class="fr-follow fr-px-4w">
+    <DsfrShare
+      title="Retrouvez-nous sur :"
+      :networks="networks"
+      :mail="mail"
+      copy-label="Copier l'url de la page dans le presse-papier"
+    />
+  </div>
   <DsfrFooter
+    class="dso-landing-footer"
     :logo-text="logoText"
   />
 </template>
