@@ -1,5 +1,5 @@
 export const mail = {
-  to: 'mailto:user@interieur.gouv.fr?subject=Sujet&body=Corps du courriel',
+  to: 'mailto:cloudpinative-relations@interieur.gouv.fr?subject=Question à propos de Cloud PI Native',
   label: 'Nous écrire',
 }
 
