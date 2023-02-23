@@ -99,7 +99,7 @@ const useCases = [
       class="fr-h2 fr-text-title--blue-france text-center"
     >
       <a href="#personas">
-        Personas
+        À qui s'adresse l'offre Cloud π Native ?
       </a>
     </h2>
     <div
