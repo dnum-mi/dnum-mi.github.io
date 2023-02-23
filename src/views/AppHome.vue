@@ -23,9 +23,9 @@ const tabTitles = [
   },
 ]
 const tabContents = [
-  'Bénéficier d\'un socle technique et organisationnel, ainsi que des moyens de formation nécessaire à la production de services numériques aux standards de qualité, de sureté et de sécurité des grands industriels du numérique',
+  'Bénéficier d\'outils et de modes de production de services numériques au standard de qualité des grands industriels du numérique',
   'Passer du développement, à l\'intégration, au déploiement à l\'échelle « sans friction »',
-  'L\'agilité dans un cadre souverain sécurisé, compatible avec les normes existantes',
+  'Un cadre souverain sécurisé',
 ]
 
 const useCases = [
@@ -95,11 +95,11 @@ const useCases = [
 
   <section>
     <h2
-      id="personas"
+      id="Personas"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
       <a href="#personas">
-        À qui s'adresse l'offre Cloud π Native ?
+        A qui s'adresse l'offre Cloud π Native?
       </a>
     </h2>
     <div
@@ -124,11 +124,11 @@ const useCases = [
 
   <section>
     <h2
-      id="pricing"
+      id="prerequis"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
-      <a href="#pricing">
-        Pricing
+      <a href="#prerequis">
+        Quels sont les prérequis?
       </a>
     </h2>
     <div
