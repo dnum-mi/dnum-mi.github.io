@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { mail, sendEmail } from '@/utils.js'
 
 const serviceTitle = 'DNUM'
-const serviceDescription = 'Cloud PI Native'
+const serviceDescription = 'Cloud π Native'
 const logoText = ['Ministère', 'de l\'intérieur', 'et des outre-mer']
 
 const quickLinks = ref([
@@ -28,7 +28,7 @@ const networks = [
   },
   {
     name: 'cloud-pi-native',
-    label: 'Cloud Pi Native',
+    label: 'Cloud π Native',
     url: 'https://pi.minint.fr/',
   },
 ]

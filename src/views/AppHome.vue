@@ -57,13 +57,13 @@ const useCases = [
     id="top"
     class="fr-h1 fr-text-title--blue-france text-center"
   >
-    Cloud PI Native
+    Cloud π Native
   </h1>
   <section
     class="fr-py-2w container-for-two"
   >
     <DsfrCallout
-      title="Description de l'offre Cloud PI Native"
+      title="Description de l'offre Cloud π Native"
       content="L'offre souverraine Interministérielle Cloud π Native proposée par la MIOM assure une protection renforcée des données sensibles de l'administration, grâce à un système de sécurité numérique intégré dès la conception des applications.
       Vous bénéficierez ainsi d'un environnement de confiance pour innover, automatiser les tests et déployer des applications performantes en toute sécurité."
       :button="knowMoreBtn"
@@ -108,13 +108,13 @@ const useCases = [
       <DsfrTile
         class="fr-mt-2w"
         title="Les acteurs Inter-ministériels"
-        description="En tant qu'acteur public ministériel vous avez un rôle ou des objectifs de transformation numérique de l'action publique ? Rejoignez la communauté Cloud Pi Native proposée par le MIOM pour sécuriser vos applications et accélérer votre tranformation numérique."
+        description="En tant qu'acteur public ministériel vous avez un rôle ou des objectifs de transformation numérique de l'action publique ? Rejoignez la communauté Cloud π Native proposée par le MIOM pour sécuriser vos applications et accélérer votre tranformation numérique."
         to="#personas"
       />
       <DsfrTile
         class="fr-mt-2w"
         title="Les ESN"
-        description="En tant qu'ESN vous jouez un rôle de conseil, d'appui et d'accompagnement des Ministère dans leur démarche de transformation numérique ? Apportez votre contribution en rejoignant la communauté Cloud Pi Native de l'Etat donnant accès à des formations, de la documentation et du support."
+        description="En tant qu'ESN vous jouez un rôle de conseil, d'appui et d'accompagnement des Ministère dans leur démarche de transformation numérique ? Apportez votre contribution en rejoignant la communauté Cloud π Native de l'Etat donnant accès à des formations, de la documentation et du support."
         to="#personas"
       />
     </div>
@@ -136,7 +136,7 @@ const useCases = [
     >
       <DsfrCallout
         title="Pricing"
-        content="Profitez dès maintenant de l'accès au service Cloud PI Native pour le moment gratuit et obtenez du support pour être accompagné à mieux qualifier votre besoin."
+        content="Profitez dès maintenant de l'accès au service Cloud π Native pour le moment gratuit et obtenez du support pour être accompagné à mieux qualifier votre besoin."
       />
       <div
         class="fr-summary"
