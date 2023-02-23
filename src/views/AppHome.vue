@@ -95,11 +95,11 @@ const useCases = [
 
   <section>
     <h2
-      id="personas"
+      id="Personas"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
       <a href="#personas">
-        Personas
+        A qui s'adresse l'offre Cloud π Native?
       </a>
     </h2>
     <div
