@@ -23,9 +23,9 @@ const tabTitles = [
   },
 ]
 const tabContents = [
-  'Bénéficier d\'outils et de modes de production de services numériques au standard de qualité des grands industriels du numérique',
+  'Bénéficier d'un socle technique et organisationnel, ainsi que des moyens de formation nécessaire à la production de services numériques aux standards de qualité, de sureté et de sécurité des grands industriels du numérique',
   'Passer du développement, à l\'intégration, au déploiement à l\'échelle « sans friction »',
-  'Un cadre souverain sécurisé',
+  'L'agilité dans un cadre souverain sécurisé, compatible avec les normes existantes',
 ]
 
 const useCases = [
@@ -99,7 +99,7 @@ const useCases = [
       class="fr-h2 fr-text-title--blue-france text-center"
     >
       <a href="#personas">
-        À qui s'adresse l'offre Cloud π Native ?
+        Personas
       </a>
     </h2>
     <div
