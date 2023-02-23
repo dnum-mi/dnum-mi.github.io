@@ -26,10 +26,6 @@ body,
   @apply grid grid-cols-2 gap-10 <md:flex <md:flex-col mb-2;
 }
 
-.container-for-two.two-third {
-  @apply grid-cols-[2fr,1fr];
-}
-
 .container-for-two > .fr-callout {
   margin: 0;
 }

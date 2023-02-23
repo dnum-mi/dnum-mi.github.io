@@ -64,8 +64,7 @@ const useCases = [
   >
     <DsfrCallout
       title="Description de l'offre Cloud π Native"
-      content="L'offre souverraine Interministérielle Cloud π Native proposée par la MIOM assure une protection renforcée des données sensibles de l'administration, grâce à un système de sécurité numérique intégré dès la conception des applications.
-      Vous bénéficierez ainsi d'un environnement de confiance pour innover, automatiser les tests et déployer des applications performantes en toute sécurité."
+      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle DevSecOps afin de produire et opérer des services numériques au meilleurs standards de qualité, sureté et sécurité."
       :button="knowMoreBtn"
     />
     <DsfrTabs
@@ -107,14 +106,14 @@ const useCases = [
     >
       <DsfrTile
         class="fr-mt-2w"
-        title="Les acteurs Inter-ministériels"
-        description="En tant qu'acteur public ministériel vous avez un rôle ou des objectifs de transformation numérique de l'action publique ? Rejoignez la communauté Cloud π Native proposée par le MIOM pour sécuriser vos applications et accélérer votre tranformation numérique."
+        title="Contexte interministériel"
+        description="En tant qu'acteur de la transformation numérique sur un secteur ministériel ou interministériel, vous souhaitez produire et gérer des produits numériques aux meilleurs standards de qualité, sureté et sécurité ? Rejoignez la communauté des partenaires-clients afin de consommer l'offre tout contribuant à son évolution."
         to="#personas"
       />
       <DsfrTile
         class="fr-mt-2w"
-        title="Les ESN"
-        description="En tant qu'ESN vous jouez un rôle de conseil, d'appui et d'accompagnement des Ministère dans leur démarche de transformation numérique ? Apportez votre contribution en rejoignant la communauté Cloud π Native de l'Etat donnant accès à des formations, de la documentation et du support."
+        title="Contexte partenaires (ESN/SSII, contributeurs du libre, …)"
+        description="En tant que producteur de produits numériques, industriel, freelance ou contributeur communautaire de l'Open Source, vous jouez un rôle de contributeur, de conseil/accompagnement ou d'appui au numérique public ? Rejoignez la communauté des partenaires-fournisseurs afin de contribuer avec faire émerger les meilleurs standards du numérique public et favoriser son interopérabilité, dans le respect de ses valeurs."
         to="#personas"
       />
     </div>
@@ -124,36 +123,16 @@ const useCases = [
 
   <section>
     <h2
-      id="prerequis"
+      id="consommation"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
-      <a href="#prerequis">
-        Quels sont les prérequis ?
+      <a href="#consommation">
+        Comment consommer Cloud π Native ?
       </a>
     </h2>
-    <div
-      class="fr-mt-2w fr-background-contrast--grey container-for-two two-third"
-    >
-      <DsfrCallout
-        title="Pricing"
-        content="Profitez dès maintenant de l'accès au service Cloud π Native pour le moment gratuit et obtenez du support pour être accompagné à mieux qualifier votre besoin."
-      />
-      <div
-        class="fr-summary"
-      >
-        <h2
-          class="fr-summary__title"
-        >
-          Critères d'éligibilité
-        </h2>
-        <ul
-          class="fr-summary__list"
-        >
-          <li>Oeuvrer dans la sphère publique</li>
-          <li>consectetur adipiscing elit</li>
-          <li>consectetur adipiscing elit</li>
-        </ul>
-      </div>
-    </div>
+    <DsfrCallout
+      title="Une offre en co-construction"
+      content="L'offre Cloud π native est actuellement en co-construction en agilité, avec nos partenaires clients, le soutien financier du plan de relance et l'appui de la DINUM. Afin de vous accompagner dans son expérimentation et sa construction, nous vous invitons à prendre contact avec nos équipes via l'adresse ci-dessous."
+    />
   </section>
 </template>
