@@ -124,11 +124,11 @@ const useCases = [
 
   <section>
     <h2
-      id="pricing"
+      id="prerequis"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
-      <a href="#pricing">
-        Pricing
+      <a href="#prerequis">
+        Quels sont les prérequis ?
       </a>
     </h2>
     <div
