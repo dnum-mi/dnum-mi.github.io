@@ -64,7 +64,7 @@ const useCases = [
   >
     <DsfrCallout
       title="Description de l'offre Cloud π Native"
-      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle DevSecOps afin de produire et opérer des services numériques au meilleurs standards de qualité, sureté et sécurité."
+      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle DevSecOps afin de produire et opérer des services numériques aux meilleurs standards de qualité, sureté et sécurité."
       :button="knowMoreBtn"
     />
     <DsfrTabs
