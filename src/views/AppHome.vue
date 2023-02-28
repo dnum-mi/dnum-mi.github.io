@@ -4,6 +4,7 @@ import { setWindowLocation, mail, catalogueUrl, ghFormationUrl } from '@/utils.j
 
 const knowMoreBtn = ref({
   label: 'Contactez-nous pour en savoir plus',
+  title: mail.address,
   onClick: () => setWindowLocation(mail.to),
 })
 
@@ -23,30 +24,32 @@ const tabTitles = [
   },
 ]
 const tabContents = [
-  'Bénéficier d\'un socle technique et organisationnel, ainsi que des moyens de formation nécessaire à la production de services numériques aux standards de qualité, de sureté et de sécurité des grands industriels du numérique',
+  'Bénéficier d\'un socle technique et organisationnel, ainsi que des moyens de formation nécessaire à la production de services numériques aux standards de qualité, de sureté et de sécurité de l\'industrie du numérique',
   'Passer du développement, à l\'intégration, au déploiement à l\'échelle « sans friction »',
   'L\'agilité dans un cadre souverain sécurisé, compatible avec les normes existantes',
 ]
 
 const useCases = [
   {
-    title: 'Cas 1',
-    description: 'La refonte du programme ERPC (éducation routière et permis de conduire)',
+    imgSrc: '/icons/map/car-fill-blue.svg',
+    title: 'La refonte du programme ERPC ',
+    description: 'Éducation routière et permis de conduire',
     to: '#cas-usage',
   },
   {
-    title: 'Cas 2',
-    description: 'Le projet SELFIM (détection de fraudes lors de l\'émission des titres sécurisés)',
+    imgSrc: '/icons/business/flag-fill-blue.svg',
+    title: 'Le projet SELFIM',
+    description: 'Détection de fraudes lors de l\'émission des titres sécurisés',
     to: '#cas-usage',
   },
   {
-    title: 'Cas 3',
-    description: 'Le ministère de la Justice',
+    imgSrc: '/icons/buildings/government-fill-blue.svg',
+    title: 'Le ministère de la Justice',
     to: '#cas-usage',
   },
   {
-    title: 'Cas 4',
-    description: 'Démarches-Simplifiées et Mon France Connect',
+    imgSrc: '/icons/user/admin-fill-blue.svg',
+    title: 'Démarches-Simplifiées et Mon France Connect',
     to: '#cas-usage',
   },
 ]
@@ -65,7 +68,7 @@ const useCases = [
     <DsfrCallout
       title="Description de l'offre Cloud π Native"
       class="fr-m-0"
-      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle DevSecOps afin de produire et opérer des services numériques aux meilleurs standards de qualité, sureté et sécurité."
+      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle et un orchestrateur DevSecOps afin de produire et opérer des services numériques de qualité au service des usagers (y compris celles et ceux qui produisent le numérique public)."
       :button="knowMoreBtn"
     />
     <DsfrTabs
@@ -95,12 +98,13 @@ const useCases = [
         <DsfrTile
           class="fr-mb-2w"
           title="Contexte interministériel"
-          description="En tant qu'acteur de la transformation numérique sur un secteur ministériel ou interministériel, vous souhaitez produire et gérer des produits numériques aux meilleurs standards de qualité, sureté et sécurité ? Rejoignez la communauté des partenaires-clients afin de consommer l'offre tout contribuant à son évolution."
+          description="Acteur de la transformation numérique sur un secteur ministériel ou interministériel ? A terme, l'offre Cloud π Native sera consommable avec le maximum d'autonomie depuis le réseau interministériel d'Etat via le catalogue de services. Pour l'heure, elle est en co-construction en agilité avec ses partenaires-clients et le code du socle est disponible en open-source."
           :to="catalogueUrl"
         />
         <DsfrButton
           label="Consultez le catalogue de services numériques du MIOM"
           secondary
+          :title="catalogueUrl"
           icon="ri-gift-2-fill"
           @click="setWindowLocation(catalogueUrl)"
         />
@@ -111,12 +115,13 @@ const useCases = [
         <DsfrTile
           class="fr-mb-2w"
           title="Contexte partenaires (ESN/SSII, contributeurs du libre, …)"
-          description="En tant que producteur de produits numériques, industriel, freelance ou contributeur communautaire de l'Open Source, vous jouez un rôle de contributeur, de conseil/accompagnement ou d'appui au numérique public ? Rejoignez la communauté des partenaires-fournisseurs afin de contribuer à faire émerger les meilleurs standards du numérique public et favoriser son interopérabilité, dans le respect de ses valeurs."
+          description="Industriel, freelance ou contributeur Open Source vous souhaitez vous faire une idée ? l'offre est mise à disposition en open source pour favoriser l'appropriation des technologies « Cloud Native » et l'émergence de standards du numérique public plus interopérables avec la production industrielle, dans le respect des valeurs du service public."
           :to="ghFormationUrl"
         />
         <DsfrButton
           label="Rejoignez la communauté sur GitHub"
           secondary
+          :title="ghFormationUrl"
           icon="ri-github-fill"
           @click="setWindowLocation(ghFormationUrl)"
         />
@@ -127,12 +132,13 @@ const useCases = [
         <DsfrTile
           class="fr-mb-2w"
           title="Démarches partenariales structurées"
-          :description="`Que vous soyez acteur du service public, industriel ou contributeur de l'Open Source, vous pouvez nous faire part de vos propositions/demandes d'expérimentation via l'adresse ${mail.address}. Nos équipes accompagnent exclusivement des expérimentations : elles n'examineront et ne répondront à AUCUNE démarche commerciale.`"
+          description="Acteur du service public, industriel ou contributeur de l'Open Source, vous contribuez au numérique public et souhaitez expérimenter l'offre ? Faites-nous part de propositions/demandes d'expérimentation. Nos équipes accompagnent les expérimentations à but non-lucratif : elles n'examineront et ne répondront à AUCUNE sollicitation commerciale."
           to="#personas"
         />
         <DsfrButton
           label="Contactez-nous"
           secondary
+          :title="mail.address"
           icon="ri-mail-line"
           @click="setWindowLocation(mail.to)"
         />
@@ -170,7 +176,9 @@ const useCases = [
         Ils nous font confiance
       </a>
     </h2>
-    <DsfrTiles :tiles="useCases" />
+    <DsfrTiles
+      :tiles="useCases"
+    />
   </section>
 
   <hr class="section-separator">

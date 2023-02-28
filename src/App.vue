@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { mail, setWindowLocation } from '@/utils.js'
+import { mail, catalogueUrl, setWindowLocation } from '@/utils.js'
 
 const serviceTitle = 'DNUM'
 const serviceDescription = 'Cloud π Native'
@@ -30,7 +30,7 @@ const networks = [
   {
     name: 'cloud-pi-native',
     label: 'Cloud π Native',
-    url: 'https://pi.minint.fr/',
+    url: catalogueUrl,
   },
 ]
 

@@ -50,6 +50,14 @@ body,
   @apply <md:my-1;
 }
 
+div.fr-tile__img {
+  @apply h-auto;
+}
+
+.fr-tile__img img {
+  @apply w-9;
+}
+
 .dso-landing-footer.fr-footer {
   box-shadow: inset 0 2px 0 0 var(--border-plain-blue-france);
 }
