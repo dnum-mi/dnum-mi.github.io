@@ -97,7 +97,7 @@ const useCases = [
       >
         <DsfrTile
           class="fr-mb-2w"
-          title="Acteurs ministériels"
+          title="Agents ministériels"
           description="Acteur de la transformation numérique sur un secteur ministériel ou interministériel ? A terme, l'offre Cloud π Native sera consommable avec le maximum d'autonomie depuis le réseau interministériel d'Etat via le catalogue de services. Pour l'heure, elle est en co-construction en agilité avec ses partenaires-clients et le code du socle est disponible en open-source."
           :to="catalogueUrl"
         />
@@ -114,7 +114,7 @@ const useCases = [
       >
         <DsfrTile
           class="fr-mb-2w"
-          title="Partenaires industriels, SSII/ESN et contributeurs open source"
+          title="Acteurs industriels, SSII/ESN, contributeurs open source... et curieux"
           description="Industriel, freelance ou contributeur Open Source vous souhaitez vous faire une idée ? l'offre est mise à disposition en open source pour favoriser l'appropriation des technologies « Cloud Native » et l'émergence de standards du numérique public plus interopérables avec la production industrielle, dans le respect des valeurs du service public."
           :to="ghFormationUrl"
         />
@@ -131,7 +131,7 @@ const useCases = [
       >
         <DsfrTile
           class="fr-mb-2w"
-          title="Démarches partenariales structurées"
+          title="Initiatives partenariales"
           description="Acteur du service public, industriel ou contributeur de l'Open Source, vous contribuez au numérique public et souhaitez expérimenter l'offre ? Faites-nous part de propositions/demandes d'expérimentation. Nos équipes accompagnent les expérimentations à but non-lucratif : elles n'examineront et ne répondront à AUCUNE sollicitation commerciale."
           to="#personas"
         />
