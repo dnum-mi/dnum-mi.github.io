@@ -4,6 +4,10 @@ export const mail = {
   address: 'cloudpinative-relations@interieur.gouv.fr',
 }
 
-export const sendEmail = () => {
-  window.location = mail.to
+export const catalogueUrl = 'https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-native'
+
+export const ghFormationUrl = 'https://github.com/dnum-mi/dso-formation#readme'
+
+export const setWindowLocation = (to) => {
+  window.location = to
 }

@@ -22,21 +22,13 @@ body,
   margin-left: 4px;
 }
 
-.container-for-two {
-  @apply grid grid-cols-2 gap-10 <md:flex <md:flex-col mb-2;
-}
-
-.container-for-two > .fr-callout {
-  margin: 0;
-}
-
 .section-separator {
   @apply my-10;
   background-image: none;
 }
 
-.fr-tile:hover {
-  background-color: var(--background-default-grey);
+.tile-button {
+  @apply h-full flex flex-col justify-start items-center;
 }
 
 .fr-share__title {

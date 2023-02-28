@@ -8,4 +8,6 @@ export {
   RiShieldCheckFill,
   RiAwardFill,
   RiGitMergeFill,
+  RiGift2Fill,
+  RiGithubFill,
 } from 'oh-vue-icons/icons/ri/index.js'

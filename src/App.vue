@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { mail, sendEmail } from '@/utils.js'
+import { mail, setWindowLocation } from '@/utils.js'
 
 const serviceTitle = 'DNUM'
 const serviceDescription = 'Cloud π Native'
@@ -8,9 +8,10 @@ const logoText = ['Ministère', 'de l\'intérieur', 'et des outre-mer']
 
 const quickLinks = ref([
   {
-    label: 'Nous contacter',
+    label: 'Contactez-nous',
+    title: mail.address,
     path: '/',
-    onClick: () => sendEmail(),
+    onClick: () => setWindowLocation(mail.to),
     icon: 'ri-mail-line',
   },
 ])
