@@ -59,9 +59,8 @@ body,
 }
 
 .fr-share__title {
-  @apply mb-8;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  @apply mb-6;
+  font-size: 1.2rem;
 }
 
 .fr-btn--cloud-pi-native::before {

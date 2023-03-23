@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref, watchEffect } from 'vue'
+import { useScheme } from '@gouvminint/vue-dsfr'
 import { mail, catalogueUrl, setWindowLocation } from '@/utils.js'
 
 const serviceTitle = 'DNUM'
@@ -37,6 +38,14 @@ const networks = [
 const copy = (text) => {
   navigator.clipboard.writeText(text)
 }
+
+const isDarkScheme = ref(false)
+
+onMounted(() => {
+  const { setScheme } = useScheme({ scheme: 'light' })
+
+  watchEffect(() => setScheme(isDarkScheme.value ? 'dark' : 'light'))
+})
 </script>
 
 <template>
@@ -67,6 +76,16 @@ const copy = (text) => {
         @click="copy(mail.address)"
       />
     </p>
+    <div
+      class="mt-2 flex flex-row gap-2 items-center cursor-pointer"
+      @click="isDarkScheme = !isDarkScheme"
+    >
+      <v-icon
+        :name="isDarkScheme ? 'ri-sun-line' : 'ri-moon-clear-line'"
+        :fill="isDarkScheme ? 'var(--yellow-moutarde-sun-348-moon-860)' : 'var(--blue-france-sun-113-625)'"
+      />
+      <span>{{ isDarkScheme ? 'Thème clair': 'Thème sombre' }}</span>
+    </div>
   </div>
   <DsfrFooter
     class="dso-landing-footer"

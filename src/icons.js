@@ -10,4 +10,6 @@ export {
   RiGitMergeFill,
   RiGift2Fill,
   RiGithubFill,
+  RiSunLine,
+  RiMoonClearLine,
 } from 'oh-vue-icons/icons/ri/index.js'
