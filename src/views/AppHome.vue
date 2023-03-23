@@ -31,24 +31,24 @@ const tabContents = [
 
 const useCases = [
   {
-    imgSrc: '/icons/map/car-fill-blue.svg',
+    imgSrc: '/icons/car-fill-blue.svg',
     title: 'La refonte du programme ERPC ',
     description: 'Éducation routière et permis de conduire',
     to: '#cas-usage',
   },
   {
-    imgSrc: '/icons/business/flag-fill-blue.svg',
+    imgSrc: '/icons/flag-fill-blue.svg',
     title: 'Le projet SELFIM',
     description: 'Détection de fraudes lors de l\'émission des titres sécurisés',
     to: '#cas-usage',
   },
   {
-    imgSrc: '/icons/buildings/government-fill-blue.svg',
+    imgSrc: '/icons/government-fill-blue.svg',
     title: 'Le ministère de la Justice',
     to: '#cas-usage',
   },
   {
-    imgSrc: '/icons/user/admin-fill-blue.svg',
+    imgSrc: '/icons/admin-fill-blue.svg',
     title: 'Démarches-Simplifiées et Mon France Connect',
     to: '#cas-usage',
   },

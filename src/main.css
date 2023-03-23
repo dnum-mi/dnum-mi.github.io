@@ -65,7 +65,7 @@ body,
 }
 
 .fr-btn--cloud-pi-native::before {
-  mask-image: url("/icons/buildings/government-fill.svg");
+  mask-image: url("/icons/government-fill-blue.svg");
   mask-size: 100% 100%;
 }
 

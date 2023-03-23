@@ -1,7 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@gouvminint/vue-dsfr': ^1.8.0
+  '@gouvfr/dsfr': 1.9.0
+  '@gouvminint/vue-dsfr': ^3.2.0
   '@rushstack/eslint-patch': ^1.2.0
   '@vitejs/plugin-vue': ^4.0.0
   eslint: ^8.31.0
@@ -16,20 +17,21 @@ specifiers:
   focus-trap-vue: ^3.2.1
   jsdom: ^21.0.0
   oh-vue-icons: 1.0.0-rc3
-  pinia: ^2.0.28
+  pinia: ^2.0.33
   vite: ^4.0.4
   vite-plugin-windicss: ^1.8.10
-  vue: ^3.2.45
+  vue: ^3.2.47
   vue-router: ^4.1.6
   windicss: ^3.5.6
   workbox-window: ^6.5.4
 
 dependencies:
-  '@gouvminint/vue-dsfr': 1.8.3_arxa7vyq4coufybxv5ez5ovgpm
+  '@gouvfr/dsfr': 1.9.0
+  '@gouvminint/vue-dsfr': 3.2.0_arxa7vyq4coufybxv5ez5ovgpm
   focus-trap: 6.9.4
   focus-trap-vue: 3.4.0_uonngsyoxd44xbj65vc37df4wq
   oh-vue-icons: 1.0.0-rc3_vue@3.2.47
-  pinia: 2.0.30_vue@3.2.47
+  pinia: 2.0.33_vue@3.2.47
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -294,22 +296,22 @@ packages:
       - supports-color
     dev: true
 
-  /@gouvfr/dsfr/1.8.5:
-    resolution: {integrity: sha512-29L+THvWmYJXztPa0Os5TS9yD2WQbrH7VnCKxkyUXQZQ+6lsGebtz0GdCnLexOWDfCn1y53Mh7+/ihxI/z0Vjw==}
+  /@gouvfr/dsfr/1.9.0:
+    resolution: {integrity: sha512-CWckBrvCL28QV2K1+GK/AjW40aGHmd1oXnCSFRD4iRhsIgXkE/+t6pH24L+6BKVBCSYfp2RTGAgRwVN06PqGMw==}
     engines: {node: '>=14.18.0'}
     dev: false
 
-  /@gouvminint/vue-dsfr/1.8.3_arxa7vyq4coufybxv5ez5ovgpm:
-    resolution: {integrity: sha512-vogJKxq2YFUHdHyis+YcJTtAUbGTxHVCq/jg5Rpup8FSbrLI6lNZhSYN/Cn+RzKmWNo4zyzXueqU8mV1Ewz5fw==}
+  /@gouvminint/vue-dsfr/3.2.0_arxa7vyq4coufybxv5ez5ovgpm:
+    resolution: {integrity: sha512-H8yx9GwcQbbULSHg2fVV+7nE7ikddGayiLgREybRi6AeRG5IH7ZNVTyqu//ajqy05OMu9+GrInYur/KJwqadCQ==}
     engines: {node: '>=18.x.x', npm: 8.x.x}
     peerDependencies:
       oh-vue-icons: 1.0.0-rc3
-      vue: ^3.2.45
+      vue: ^3.2.47
       vue-router: ^4.1.6
     dependencies:
-      '@gouvfr/dsfr': 1.8.5
-      focus-trap: 6.7.3
-      focus-trap-vue: 3.4.0_jmsntfcgt735mk7e5okkbnujxu
+      '@gouvfr/dsfr': 1.9.0
+      focus-trap: 7.4.0
+      focus-trap-vue: 4.0.2_osh5ahu7pjjwyp4t7mhvrqdjey
       oh-vue-icons: 1.0.0-rc3_vue@3.2.47
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
@@ -1270,16 +1272,6 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /focus-trap-vue/3.4.0_jmsntfcgt735mk7e5okkbnujxu:
-    resolution: {integrity: sha512-VAI4gJgsjC8KcjDH+h4j2SxFY2XrXmm47a1EXti8gx311abybzqVhkS32Um7i+00J8RQD7hqL1Kfc26WpsMx0w==}
-    peerDependencies:
-      focus-trap: ^6.7.0
-      vue: ^3.0.0-rc.13
-    dependencies:
-      focus-trap: 6.7.3
-      vue: 3.2.47
-    dev: false
-
   /focus-trap-vue/3.4.0_uonngsyoxd44xbj65vc37df4wq:
     resolution: {integrity: sha512-VAI4gJgsjC8KcjDH+h4j2SxFY2XrXmm47a1EXti8gx311abybzqVhkS32Um7i+00J8RQD7hqL1Kfc26WpsMx0w==}
     peerDependencies:
@@ -1290,16 +1282,26 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /focus-trap/6.7.3:
-    resolution: {integrity: sha512-8xCEKndV4KrseGhFKKKmczVA14yx1/hnmFICPOjcFjToxCJYj/NHH43tPc3YE/PLnLRNZoFug0EcWkGQde/miQ==}
+  /focus-trap-vue/4.0.2_osh5ahu7pjjwyp4t7mhvrqdjey:
+    resolution: {integrity: sha512-2iQN2xKCSCzyhcD90VpueQcTIAhaCRxxo67fkz7RSqLmEd16QKjfGslCr3KxvBx0LfpVN9j0IAyKKuJKw3Intg==}
+    peerDependencies:
+      focus-trap: ^7.0.0
+      vue: ^3.0.0
     dependencies:
-      tabbable: 5.3.3
+      focus-trap: 7.4.0
+      vue: 3.2.47
     dev: false
 
   /focus-trap/6.9.4:
     resolution: {integrity: sha512-v2NTsZe2FF59Y+sDykKY+XjqZ0cPfhq/hikWVL88BqLivnNiEffAsac6rP6H45ff9wG9LL5ToiDqrLEP9GX9mw==}
     dependencies:
       tabbable: 5.3.3
+    dev: false
+
+  /focus-trap/7.4.0:
+    resolution: {integrity: sha512-yI7FwUqU4TVb+7t6PaQ3spT/42r/KLEi8mtdGoQo2li/kFzmu9URmalTvw7xCCJtSOyhBxscvEAmvjeN9iHARg==}
+    dependencies:
+      tabbable: 6.1.1
     dev: false
 
   /for-each/0.3.3:
@@ -1964,8 +1966,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pinia/2.0.30_vue@3.2.47:
-    resolution: {integrity: sha512-q6DUmxWwe/mQgg+55QQjykpKC+aGeGdaJV3niminl19V08dE+LRTvSEuqi6/NLSGCKHI49KGL6tMNEOssFiMyA==}
+  /pinia/2.0.33_vue@3.2.47:
+    resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -2197,6 +2199,10 @@ packages:
 
   /tabbable/5.3.3:
     resolution: {integrity: sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA==}
+    dev: false
+
+  /tabbable/6.1.1:
+    resolution: {integrity: sha512-4kl5w+nCB44EVRdO0g/UGoOp3vlwgycUVtkk/7DPyeLZUCuNFFKCFG6/t/DgHLrUPHjrZg6s5tNm+56Q2B0xyg==}
     dev: false
 
   /text-table/0.2.0:
