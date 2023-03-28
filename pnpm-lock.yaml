@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@gouvfr/dsfr': 1.9.0
-  '@gouvminint/vue-dsfr': ^3.2.0
+  '@gouvminint/vue-dsfr': ^3.3.0
   '@rushstack/eslint-patch': ^1.2.0
   '@vitejs/plugin-vue': ^4.0.0
   eslint: ^8.31.0
@@ -27,7 +27,7 @@ specifiers:
 
 dependencies:
   '@gouvfr/dsfr': 1.9.0
-  '@gouvminint/vue-dsfr': 3.2.0_arxa7vyq4coufybxv5ez5ovgpm
+  '@gouvminint/vue-dsfr': 3.3.0_arxa7vyq4coufybxv5ez5ovgpm
   focus-trap: 6.9.4
   focus-trap-vue: 3.4.0_uonngsyoxd44xbj65vc37df4wq
   oh-vue-icons: 1.0.0-rc3_vue@3.2.47
@@ -301,8 +301,8 @@ packages:
     engines: {node: '>=14.18.0'}
     dev: false
 
-  /@gouvminint/vue-dsfr/3.2.0_arxa7vyq4coufybxv5ez5ovgpm:
-    resolution: {integrity: sha512-H8yx9GwcQbbULSHg2fVV+7nE7ikddGayiLgREybRi6AeRG5IH7ZNVTyqu//ajqy05OMu9+GrInYur/KJwqadCQ==}
+  /@gouvminint/vue-dsfr/3.3.0_arxa7vyq4coufybxv5ez5ovgpm:
+    resolution: {integrity: sha512-IFSVPpSE5m+v0qnsHmdY6Tq3My6unSUg73J7O/edvXexuKKgZUWiSX/Fcx7t4M8Mvy12BXdvJJuSWumx5Cfa0g==}
     engines: {node: '>=18.x.x', npm: 8.x.x}
     peerDependencies:
       oh-vue-icons: 1.0.0-rc3

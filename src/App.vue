@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref, watchEffect } from 'vue'
 import { useScheme } from '@gouvminint/vue-dsfr'
-import { mail, catalogueUrl, setWindowLocation } from '@/utils.js'
+import { mail, catalogueUrl } from '@/utils.js'
 
 const serviceTitle = 'DNUM'
 const serviceDescription = 'Cloud π Native'
@@ -11,8 +11,7 @@ const quickLinks = ref([
   {
     label: 'Contactez-nous',
     title: mail.address,
-    path: '/',
-    onClick: () => setWindowLocation(mail.to),
+    path: 'mailto:cloudpinative-relations@interieur.gouv.fr?subject=Question à propos de Cloud π Native',
     icon: 'ri-mail-line',
   },
 ])
