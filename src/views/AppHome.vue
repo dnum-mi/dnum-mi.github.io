@@ -24,9 +24,9 @@ const tabTitles = [
   },
 ]
 const tabContents = [
-  'Bénéficier d\'un socle technique et organisationnel, ainsi que des moyens de formation nécessaire à la production de services numériques aux standards de qualité, de sureté et de sécurité de l\'industrie du numérique',
-  'Passer du développement, à l\'intégration, au déploiement à l\'échelle « sans friction »',
-  'L\'agilité dans un cadre souverain sécurisé, compatible avec les normes existantes',
+  'Avec la mise en place progressive d\'une véritable usine logicielle DevSecOps ("DSO" pour "développement, sécurité et exploitation") soutenant l\'agilité pour concevoir des applications sécurisées et de qualité à partir du socle OpenShift, le ministère de l\'Intérieur se dote d\'une offre clé en main, fonctionnelle et technique, qui permet de produire et opérer des services numériques de haute qualité, sécurisés et ergonomiques qui répondent aux besoins des citoyens et des agents, tout en restant évolutifs et maintenables à moindre coût.',
+  'Temps de déploiement < 2 heures pour une application existante, sans impact utilisateur ; < 15 minutes pour un environnement usine et < 5 jours pour le déploiement en autonomie d\'une nouvelle application d\'un langage « top3 », après demande initiale sur la console Cloud Native (incluant signature du conventionnement dématérialisé.',
+  'L\'offre Cloud π Native permet d\'héberger des données sensibles jusqu\'au niveau Diffusion Restreinte (DR) en conformité avec le SecNumCloud. Elle intègre les règles de durcissement de Kubernetes en vigueur et la conformité à l\'état de l\'art (cf. SecNumCloud et guide NSA/CISA).',
 ]
 
 const useCases = [
@@ -68,7 +68,7 @@ const useCases = [
     <DsfrCallout
       title="Description de l'offre Cloud π Native"
       class="fr-m-0"
-      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer, pour proposer une usine logicielle et un orchestrateur DevSecOps afin de produire et opérer des services numériques de qualité au service des usagers (y compris celles et ceux qui produisent le numérique public)."
+      content="L'offre à visée interministérielle Cloud π Native s'appuie sur l'écosystème de ressources Cloud π du Ministère de l'Intérieur et des Outre-mer. Elle propose en outre une usine logicielle et un orchestrateur DevSecOps permettant de produire et opérer des services numériques de qualité au service des usagers (y compris celles et ceux qui produisent le numérique public)."
       :button="knowMoreBtn"
     />
     <DsfrTabs
