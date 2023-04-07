@@ -63,7 +63,7 @@ const useCases = [
     Cloud π Native
   </h1>
   <section
-    class="fr-py-2w grid grid-cols-2 gap-10 <md:flex <md:flex-col mb-2"
+    class="fr-py-2w grid grid-cols-2 gap-10 grid-rows-1 <md:flex <md:flex-col mb-2"
   >
     <DsfrCallout
       title="Description de l'offre Cloud π Native"
@@ -75,6 +75,7 @@ const useCases = [
       :tab-list-name="tabListName"
       :tab-titles="tabTitles"
       :tab-contents="tabContents"
+      class="md:(h-full mt-0 pt-0)"
     />
   </section>
 
@@ -150,17 +151,48 @@ const useCases = [
 
   <section>
     <h2
-      id="consommation"
+      id="renseignement"
       class="fr-h2 fr-text-title--blue-france text-center"
     >
-      <a href="#consommation">
-        Comment consommer Cloud π Native ?
+      <a href="#renseignement">
+        Comment se renseigner sur Cloud π Native ?
       </a>
     </h2>
     <DsfrCallout
+      class="fr-mb-0 fr-pb-0"
       title="Une offre en co-construction"
       content="L'offre Cloud π native est actuellement en co-construction en agilité, avec nos partenaires clients, le soutien financier du plan de relance et l'appui de la DINUM. Afin de vous accompagner dans son expérimentation et sa construction, nous vous invitons à prendre contact avec nos équipes via l'adresse cloudpinative-relations@interieur.gouv.fr."
     />
+    <ul class="fr-callout flex flex-col gap-2">
+      <li>
+        <v-icon
+        class="fr-mr-1v"
+        name="ri-checkbox-line"
+        fill="var(--text-action-high-blue-france)"
+        />
+        Comprendre les enjeux :
+        <a
+          href="https://github.com/cloud-pi-native/embarquement-autoformation"
+          title="aller sur la page autoformation"
+        >
+          autoformation
+        </a>
+      </li>
+      <li>
+        <v-icon
+        class="fr-mr-1v"
+        name="ri-checkbox-line"
+        fill="var(--text-action-high-blue-france)"
+        />
+        Comprendre l'offre :
+        <a
+          href="https://github.com/cloud-pi-native/documentation"
+          title="aller sur la page documentation"
+        >
+          documentation technique
+        </a>
+      </li>
+    </ul>
   </section>
 
   <hr class="section-separator">

@@ -53,6 +53,8 @@ onMounted(() => {
     :service-description="serviceDescription"
     :logo-text="logoText"
     :quick-links="quickLinks"
+    operator-img-src="/icons/cloud-pi.svg"
+    operator-img-alt="logo cloud PI Native"
   />
 
   <div class="fr-container fr-mt-2w">

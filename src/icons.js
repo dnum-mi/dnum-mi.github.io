@@ -12,4 +12,5 @@ export {
   RiGithubFill,
   RiSunLine,
   RiMoonClearLine,
+  RiCheckboxLine,
 } from 'oh-vue-icons/icons/ri/index.js'
