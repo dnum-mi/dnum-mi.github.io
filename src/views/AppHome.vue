@@ -166,9 +166,9 @@ const useCases = [
     <ul class="fr-callout flex flex-col gap-2">
       <li>
         <v-icon
-        class="fr-mr-1v"
-        name="ri-checkbox-line"
-        fill="var(--text-action-high-blue-france)"
+          class="fr-mr-1v"
+          name="ri-checkbox-line"
+          fill="var(--text-action-high-blue-france)"
         />
         Comprendre les enjeux :
         <a
@@ -180,9 +180,9 @@ const useCases = [
       </li>
       <li>
         <v-icon
-        class="fr-mr-1v"
-        name="ri-checkbox-line"
-        fill="var(--text-action-high-blue-france)"
+          class="fr-mr-1v"
+          name="ri-checkbox-line"
+          fill="var(--text-action-high-blue-france)"
         />
         Comprendre l'offre :
         <a
@@ -190,6 +190,19 @@ const useCases = [
           title="aller sur la page documentation"
         >
           documentation technique
+        </a>
+      </li>
+      <li>
+        <v-icon
+          class="fr-mr-1v"
+          name="ri-checkbox-line"
+          fill="var(--text-action-high-blue-france)"
+        />
+        Politique d'accompagnement :
+        <a
+          href="https://github.com/cloud-pi-native/embarquement-autoformation/blob/main/eligibilite.md"
+        >
+          conditions d'éligibilité
         </a>
       </li>
     </ul>
